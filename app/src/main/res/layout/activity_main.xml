@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Connexion"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="16dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email:"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:padding="8dp"/>
+
+    <EditText
+        android:id="@+id/chEmaill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint=" votre adresse e-mail..." />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mot de passe:"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:padding="8dp"/>
+
+    <EditText
+        android:id="@+id/chMott"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mot de passe "
+        android:inputType="textPassword"/>
+
+
+    <Button
+        android:id="@+id/btnEnregistrer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="se connecter"
+        android:onClick="connecter"
+        android:background="@color/black"
+        android:layout_marginTop="16dp"/>
+
+    <!-- CheckBox "Garder ma session active" -->
+    <CheckBox
+        android:id="@+id/checkBoxRememberMe"
+        android:layout_width="1000px"
+        android:layout_margin="30px"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Garder ma session active"
+        android:textColor="@android:color/black"
+         />
+
+    <!-- Lien "Mot de passe oublié" -->
+    <TextView
+        android:id="@+id/textViewForgotPassword"
+        android:layout_width="1000px"
+        android:layout_margin="30px"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="10dp"
+        android:text="Mot de passe oublié?"
+        android:textColor="@android:color/holo_blue_dark"
+        />
+
+    <TextView
+        android:id="@+id/textViewSignup"
+        android:layout_width="1000px"
+        android:layout_margin="30px"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="inscrivez vous ici"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textStyle="bold"
+        android:clickable="true"
+        android:onClick="onClickSignup" />
+
+
+
+</LinearLayout>
